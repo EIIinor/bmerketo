@@ -1,43 +1,90 @@
 .bestCollection {
+    padding: 60px 0;
 
     .container {
-
+        display: block;
+        text-align: center; 
     }
 
     .title {
-
+        font-size: 40px;
+        font-family: $font-poppins;
+        color: $color-dark-2;
+        font-weight: $font-weight-bold;
     }
 
     .categories {
-        a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
 
+        a {
+            color: $color-dark-3;
+            padding: 7px;
         }
     }
 
     .col {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        display: none;
+
+        @include lg {
+            display: inline;
+        }
+
         .card {
-
-            img {
-
-            }
-
+            border-radius: 0;
+            border: none;
+            
             .card-body {
-                h1 {
+                display: flex;
+                display: block;  
+                justify-content: space-between;
+                padding: 15px 0 15px 0;
+                
 
+                h1 {
+                    text-align: left;
+                    color: $color-dark-1;
+                    font-family: $font-poppins;
+                    font-size: 16px;                                                                
                 }
 
                 .card-old-price {
-
+                    text-align: left;
+                    text-decoration: line-through;
+                    display: none;
+                    color: $color-dark-2;    
                 }
 
                 .card-discount-price {
-
+                    text-align: left;
+                    color: $color-dark-2;
+                    display: inline;
+                    justify-content: flex-start;
+                    justify-content: space-between; 
                 }
 
-                a {
-                    
+                a {         
+                    color: $color-dark-1;
+                    font-size: 25px;
+                    justify-content:flex-end;
                 }
 
+            }
+        }
+    }
+
+    button {
+        display: none;
+
+        @include lg {
+            display: inline;
+
+            &:hover {
+                color: white;
+                background-color: $color-dark-1;
             }
         }
     }

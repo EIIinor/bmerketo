@@ -1,0 +1,42 @@
+.subscribe {
+    display: none;
+    background-color: $color-dark-4;
+    padding: 50px;
+
+    @include lg {
+        display: flex;
+    }
+   
+    .container {
+        background-color: $color-white;
+        padding: 80px;
+    }
+
+    .form {
+
+
+        #newsletter {
+            padding-left: 100px;
+
+            #quary {
+                padding: 15px;
+                width: 90%;
+                border-radius: 35px 35px;
+                padding-right: 50px;
+                padding-left: 50px;
+                border: 1px solid $color-dark-4;
+                
+            }
+            button {
+                position: absolute;
+                right: 450px;
+                padding: 16px;
+                border-radius: 35px 35px;
+                color: $color-white;
+                background-color: $color-theme-1;
+                border: none;
+            }
+        }
+    }
+
+}

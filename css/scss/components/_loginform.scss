@@ -1,0 +1,50 @@
+.loginform {
+    margin-top: 300px;
+    margin-bottom: 300px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #login{
+        margin: 0;
+        padding: 0;
+
+        h1 {
+            color: $color-dark-3;
+            font-size: 18px;
+            margin-bottom: 40px;
+
+            @include lg {
+                font-size: 30px;
+            }
+        }
+
+        .mb-4 {
+            display: flex;
+            display: block;
+            margin-right: 30px;
+
+            label {
+                
+                @include lg {
+                    font-size: 25px;
+                    display: block;
+                }
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid $color-dark-4;
+                
+
+                @include lg {
+                    width: 525px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
